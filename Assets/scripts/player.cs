@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             direction = Vector3.up * strength;
+            SoundManager.PlaySound();
         }
         if (Input.touchCount > 0)
         {
